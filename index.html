@@ -1,0 +1,267 @@
+<!--
+***This is the first Page***
+
+you can look second one on this link:
+https://github.com/alimokhtari79/stock-market-news
+
+
+Design: 
+https://dribbble.com/shots/15294741-Cryptocurrency-Mobile-Responsive/attachments/7049249?mode=media
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Stock Market App</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-container w-full flex flex-col gap-y-7 px-52">
+            <!-- header -->
+            <header class="main-header flex mt-8 items-center leading-8 ">
+                <div class="main-header__left">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="main-header__center m-auto font-semibold text-xl">
+                    Assets
+                </div>
+            </header>
+            <!-- /header -->
+
+            <!-- Search bar -->
+            <section class="search flex  justify-between border px-5 rounded-xl text-gray-400 py-1.5">
+                <div class="search__left--icon w-full flex items-center">
+                    <i class="fas fa-search fa-lg"></i>
+                    <input class="border-none w-full focus:outline-none focus:ring-0" type="text" placeholder="Search">
+                </div>
+                <div class="search__input">
+                </div>
+                <div class="search__right--icon flex items-center">
+                    <i class="fas fa-sliders-h fa-lg"></i>
+                </div>
+            </section>
+            <!-- /Search bar -->
+
+            <!-- nav bar -->
+            <nav class="categories__items flex justify-between">
+                <div class="categories__item">
+                    <button class="border px-5 py-2 rounded-3xl">USD</button>
+                </div>
+                <div class="categories__item">
+                    <button class="border px-5 py-2 rounded-3xl">24h Volume</button>
+                </div>
+                <div class="categories__item">
+                    <button class="border px-5 py-2 rounded-3xl">Popular</button>
+                </div>
+            </nav>
+            <!-- /nav bar -->
+
+            <!-- Coins Container -->
+            <div class="coins-container flex flex-col gap-16 mt-10 mb-14">
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img src="https://i.postimg.cc/bvB94jcg/bitcoin-logo.png" alt="bitcoin">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                Bitcoin
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                BTC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-green-400">
+                                $58,068.90
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-up text-green-400 pr-1"></i>
+                                2.55%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/rs6CFCpt/Ethereum-Logo.png" alt="Ethereum">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                Ethereum
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                ETH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-yellow-500">
+                                $1,791.27
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-down text-yellow-500 pr-1"></i>
+                                4.27%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/9Fht6pS6/xrp-logo.png" alt="bitcoin">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                XPR
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                XPR
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-green-400">
+                                $0.445
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-up text-green-400 pr-1"></i>
+                                0.3%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/Y2gzDVXN/tether-logo.png" alt="bitcoin">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                tether
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                USDT
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-green-400">
+                                $1.20
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-up text-green-400 pr-1"></i>
+                                0.2%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/cJHcDLj6/bitcoin-cash-logo.png" alt="bitcoin-cash">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                bitcoin cash
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                BCH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-yellow-500">
+                                $529.59
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-down text-yellow-500 pr-1"></i>
+                                2.7%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/4dHQgFXg/Chainlink-Logo.png" alt="bitcoin">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                Chainlink
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                UNK
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-green-400">
+                                $28.267
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-up text-green-400 pr-1"></i>
+                                4.0%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin flex justify-between">
+                    <div class="coin__left flex">
+                        <div class="coin__img flex items-center">
+                            <img class="" src="https://i.postimg.cc/XqwKZGZ1/litecoin-logo.png" alt="bitcoin">
+                        </div>
+                        <div class="coin__names ml-5">
+                            <div class="coin__fullname font-bold">
+                                litecoin
+                            </div>
+                            <div class="coin__nicname mt-2 text-xs text-gray-400">
+                                LTC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin__right relative right-">
+                        <div class="coin__prices">
+                            <div class="coin__price font-bold text-green-400">
+                                $208.07
+                            </div>
+                            <div class="coin__changes mt-2 text-xs relative text-right right-0 text-gray-400">
+                                <i class="fas fa-caret-up text-green-400 pr-1"></i>
+                                1.2%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Coins Container -->
+
+        </div>
+    </main>
+</body>
+
+</html>

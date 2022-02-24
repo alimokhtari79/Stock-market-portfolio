@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --clr-bg-white: #fff;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--clr-bg-white);
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: #778197;
+}
